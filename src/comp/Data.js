@@ -4,6 +4,7 @@ export const moviesData = [
     image:
       "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm_gen_cfilm%3D286066.html&psig=AOvVaw3ZkrMyYF6MWo6vzgyEOML4&ust=1667585872577000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKj9qJqxkPsCFQAAAAAdAAAAABAO",
     rating: 5,
+    seen: false,
     name: "Star Wars: The Rise Of Skywalker",
     date: "2019",
     description:
@@ -13,6 +14,8 @@ export const moviesData = [
     id: Math.random(),
     image: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
     rating: 4,
+    seen: false,
+
     name: "Avengers: Infinity War",
     date: "2018",
     description:
@@ -22,6 +25,8 @@ export const moviesData = [
     id: Math.random(),
     image: "https://image.tmdb.org/t/p/w500/pjeMs3yqRmFL3giJy4PMXWZTTPa.jpg",
     rating: 4,
+    seen: false,
+
     name: "Frozen II",
     date: "2019",
     description:
@@ -32,6 +37,8 @@ export const moviesData = [
     image:
       "https://images-na.ssl-images-amazon.com/images/I/51oDs32SXlL._AC_.jpg",
     rating: 3,
+    seen: false,
+
     name: "Fantastic Beasts and Where to Find Them",
     date: "2016",
     description:
@@ -42,6 +49,8 @@ export const moviesData = [
     image:
       "https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg",
     rating: 5,
+    seen: false,
+
     name: "Interstellar",
     date: "2014",
     description:

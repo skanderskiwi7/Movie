@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Film = ({ Movie, handledelete }) => {
+const Film = ({ Movie, handledelete, handleseen }) => {
   return (
     <div>
       <Card style={{ width: "18rem" }}>
@@ -13,6 +13,9 @@ const Film = ({ Movie, handledelete }) => {
           <Card.Title>{Movie.date}</Card.Title>
 
           <Card.Text>{Movie.description}</Card.Text>
+          <button onClick={(e) => handleseen(Movie.seen)}>
+            {Movie.seen ? "seen" : "unseen"}
+          </button>
           <Button variant="primary" onClick={() => handledelete(Movie.id)}>
             delete
           </Button>
