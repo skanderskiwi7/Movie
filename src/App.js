@@ -11,12 +11,17 @@ function App() {
   const handledelete = (ID) => {
     setMovieData(MovieData.filter((e) => e.id !== ID));
   };
-  const handleseen = (ID) => {
-    console.log(handleseen);
+
+  const handleseen = (movieId) => {
+    console.log("movieId", movieId);
+
     setMovieData(
-      MovieData.map((e) => (e.id !== ID ? { ...e, seen: !e.seen } : { e }))
+      MovieData.map((movie) =>
+        movie.id == movieId ? { ...movie, seen: !movie.seen } : movie
+      )
     );
   };
+
   const addFilm = (newMovie) => {
     setMovieData([...MovieData, newMovie]);
   };

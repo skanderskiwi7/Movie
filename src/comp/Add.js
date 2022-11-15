@@ -5,9 +5,22 @@ const Add = ({ addFilm }) => {
   const [Date, setDate] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    addFilm({
+      id: Math.floor(Math.random() * 100),
+      name,
+      Date,
+      image,
+      description,
+    });
+  };
+
   return (
-    <div>
-      <h1>Titre</h1>
+    <form onSubmit={handleSubmit}>
+      {/* <h1>Titre</h1> */}
       <input
         placeholder="name"
         type="text"
@@ -30,24 +43,14 @@ const Add = ({ addFilm }) => {
       />
       <br />
       <input
+        placeholder="description"
         type="text"
         name="description"
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button
-        onClick={() =>
-          addFilm({
-            id: Math.random(),
-            name: name,
-            date: Date,
-            image: image,
-            description: description,
-          })
-        }
-      >
-        add
-      </button>
-    </div>
+      <br />
+      <input value="add" type="submit" />
+    </form>
   );
 };
 

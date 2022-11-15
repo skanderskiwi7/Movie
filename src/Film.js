@@ -13,7 +13,7 @@ const Film = ({ Movie, handledelete, handleseen }) => {
           <Card.Title>{Movie.date}</Card.Title>
 
           <Card.Text>{Movie.description}</Card.Text>
-          <button onClick={(e) => handleseen(Movie.seen)}>
+          <button onClick={(e) => handleseen(Movie.id)}>
             {Movie.seen ? "seen" : "unseen"}
           </button>
           <Button variant="primary" onClick={() => handledelete(Movie.id)}>
